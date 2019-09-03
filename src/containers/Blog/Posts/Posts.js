@@ -28,7 +28,8 @@ class Posts extends Component {
     }
 
     postSelectedHandler = (id) => {
-        this.setState({ selectedPostId: id });
+        // this.setState({ selectedPostId: id });
+        this.props.history.push('/' + id);
     }
 
     render() {
